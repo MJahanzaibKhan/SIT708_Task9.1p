@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="@dimen/_20sdp"
+        android:background="@color/white"
+        tools:context=".ui.fragment.HomeFragment">
+
+        <TextView
+            android:id="@+id/lost_found_items_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:text="LOST &amp; FOUND ITEMS APP"
+            android:textSize="@dimen/_20ssp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/new_advert_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#74EC47"
+            android:text="CREATE A NEW ADVERT"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/all_found_and_lost_btn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.884" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/all_found_and_lost_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#74EC47"
+            android:text="SHOW ALL LOST &amp; FOUND ITEMS"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/all_found_and_lost_btn" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/show_map_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#74EC47"
+            android:text="SHOW ON MAP"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/all_found_and_lost_btn"
+            app:layout_constraintVertical_bias="0.095" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
